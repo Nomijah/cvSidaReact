@@ -1,0 +1,15 @@
+.mainGrid {
+    padding-top: 3em;
+}
+
+.contactBox {
+    padding-top: 0.5em;
+    text-align: center;
+}
+
+.contactBox :is(a) {
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    color:rgb(39, 36, 36)
+}

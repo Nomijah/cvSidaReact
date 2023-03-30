@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-image: url("../images/bkg_vbg2.jpg");
+  background-size: cover; /* Fill the entire window */
+  background-attachment: fixed; /* Fix picture when scrolling */
+  background-repeat: no-repeat; /* Do not repeat picture */
+  background-position: center; /* Display center of image when window is too narrow to display whole width */
+}
+
+.mainContainer {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 6.7% 1% auto 4% 6%;
+  grid-template-areas:
+  ". . ."
+  ". . ."
+  ". main ."
+  ". . ."
+  "footer footer footer";
+}
+
+.mainGrid {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+@media screen and (max-width:700px){
+  .mainContainer {
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 6.7% 1% auto 1% 6%;
+  grid-template-areas:
+  "header header header"
+  ". . ."
+  ". main ."
+  ". . ."
+  "footer footer footer";
+  }
+}

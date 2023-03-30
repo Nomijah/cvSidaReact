@@ -1,0 +1,45 @@
+
+#portrait {
+    margin: 2rem;
+    width: 20em;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+.box_group {
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+
+.box_group div {
+    margin: 1rem;
+    align-self: center;
+}
+
+@media screen and (max-width: 700px) and (min-width: 50px) {
+    .box_group {
+        justify-content: space-around;
+        flex-direction: column;
+        background: none;
+    }
+
+    .box_group div {
+        margin: 0.1em;
+        justify-content: center;
+    }
+
+    #homepres {
+        margin: 2em 0em 0em;
+    }
+
+    #portrait {
+        width: 80vw;
+
+        margin: 1em;
+    }
+
+}

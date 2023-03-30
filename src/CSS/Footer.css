@@ -1,0 +1,45 @@
+footer {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0)0%, rgb(106, 105, 105,0.3)5%,rgba(177, 184, 202, 0.6) 6%,rgba(177, 184, 202, 0.6) 100%);
+  }
+  
+  .footerContent {
+    display: flex;
+    color:rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    padding-top: 0.2em;
+  }
+  
+  .footerContent div {
+  align-self: center;
+  }
+
+  /* Style all font awesome icons */
+.fa {
+    color: rgba(0, 0, 0, 0.5);
+    padding: 0.25em;
+    font-size: 1.5em;
+    width: 2em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .footerContent > div {
+    font-size: 1em;;
+  }
+
+  .copy {
+    padding-right: 0.7em;
+  }
